@@ -41,7 +41,7 @@ async def download_video(url, reply_msg, user_mention, user_id):
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
-    response = requests.get(f"https://teraboxvideodownloader.nepcoderdevs.workers.dev/?url={url}")
+    response = requests.get(f"https://teradownloader.com/download?link={url}")
     response.raise_for_status()
     data = response.json()
 
